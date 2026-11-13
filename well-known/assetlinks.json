@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.mahmoud.pricehunter",
+      "sha256_cert_fingerprints": [
+        "28:B0:B4:6E:49:59:85:91:AA:18:6C:2B:D3:CE:AD:20:CA:0D:29:94:4B:1E:58:25:32:87:CA:1A:D4:F4:D2:EE"
+      ]
+    }
+  }
+]
