@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Price Hunter</title>
+<style>
+  body { font-family: system-ui, sans-serif; background: #f4f7f6; color: #1b1b1b; margin: 0; padding: 24px; text-align: center; }
+  .card { max-width: 420px; margin: 40px auto; background: #fff; border-radius: 16px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+  a.btn { display: inline-block; margin-top: 16px; padding: 12px 20px; background: #0e7c66; color: #fff; border-radius: 24px; text-decoration: none; font-weight: bold; }
+  p { line-height: 1.7; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h2>Price Hunter</h2>
+  <p>هذا رابط منتج من تطبيق Price Hunter.</p>
+  <a class="btn" id="open" href="#">افتح المنتج في التطبيق</a>
+  <p style="font-size:13px;color:#666">إن لم يُفتح التطبيق: تأكد أنه مثبت على هاتفك.</p>
+</div>
+<script>
+  var u = new URLSearchParams(location.search).get('u') || '';
+  document.getElementById('open').href = 'pricehunter://product/' + encodeURIComponent(u);
+</script>
+</body>
+</html>
